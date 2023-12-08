@@ -1,0 +1,50 @@
+/******* Bloc INDEX *******/
+body {
+    margin:0;
+}
+
+.header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    @include font-family-roboto;
+
+}
+/******* Éléments INDEX *******/
+
+.header__logo {
+   width: 160px;
+   margin-top: 12px;
+   margin-bottom: 12px;
+   
+    
+}
+
+.header__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    padding: 10px;
+    width: 100%;
+    background-color:#EAEAEA;
+}
+
+.header__button {
+    display: flex;
+    border: none;
+    font-size: 16px;
+    background-color: #EAEAEA; 
+}
+
+/******* Bloc RÉSERVATION *******/
+
+.reservation-titre {
+    @include font-family-roboto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:#F6F6F6;
+    padding: 15px;
+   
+}

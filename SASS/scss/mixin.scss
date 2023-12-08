@@ -1,0 +1,19 @@
+@mixin font-family-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-family-shrikhand {
+    font-family: 'Shrikhand', serif;
+}
+
+@mixin first-color-purple {
+    color: #9356DC
+}
+
+@mixin second-color-pink {
+    color:#FF79DA;
+}
+
+@mixin third-color-green {
+    color:#99E2D0;
+}
