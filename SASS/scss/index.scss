@@ -1,40 +1,15 @@
-/******* Bloc INDEX *******/
-body {
-    margin:0;
-}
 
-.header {
-    display:flex;
-    flex-direction: column;
+/******* Bloc localisation *******/
+
+.localisation {
+    height: 50px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    gap: 17px;
     @include font-family-roboto;
 
-}
-/******* Éléments INDEX *******/
-
-.header__logo {
-   width: 160px;
-   margin-top: 12px;
-   margin-bottom: 12px;
-   
-    
-}
-
-.header__location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
-    padding: 10px;
-    width: 100%;
-    background-color:#EAEAEA;
-}
-
-.header__button {
-    display: flex;
-    border: none;
-    font-size: 16px;
-    background-color: #EAEAEA; 
 }
 
 /******* Bloc RÉSERVATION *******/
@@ -43,8 +18,85 @@ body {
     @include font-family-roboto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     background-color:#F6F6F6;
-    padding: 15px;
+    padding: 40px;
+     p { 
+        color: #353535;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.reservation-titre__button {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--Button-Gradient, linear-gradient(180deg, #ff79da -11.44%, #9356DC 105.93%));
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    text-decoration: none;
+}
+
+.fonctionnement {
+    @include font-family-roboto;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.fonctionnement__titre {
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.fonctionnement__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background-color: #F6F6F6;
+    width: 322.486px;
+    height: 72.379px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+.fonctionnement-group {
    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.elipse {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background-color: #9356DC;
+    color: white;
+    text-align: center;
 }
