@@ -49,9 +49,11 @@
     display:flex;
     flex-direction: column;
     padding: 20px;
+    gap: 30px;
 }
 
 .fonctionnement__titre {
+    
     font-size: 24px;
     font-weight: 700;
     
@@ -74,22 +76,18 @@
     font-weight: 500;
 }
 
-
-
-
 .fonctionnement-group {
-   
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .elipse {
+    margin: 0;
+    left: 0;
     position: absolute;
     top: 50%;
-    left: 0%;
-    transform: translateY(-50%);
+    transform: translate(-50%,-50%);
     display: flex;
     justify-content: center;
     align-items: center;

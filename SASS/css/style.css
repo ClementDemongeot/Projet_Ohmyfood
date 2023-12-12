@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  gap: 30px;
 }
 
 .fonctionnement__titre {
@@ -95,10 +96,11 @@ body {
 }
 
 .elipse {
+  margin: 0;
+  left: 0;
   position: absolute;
   top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
