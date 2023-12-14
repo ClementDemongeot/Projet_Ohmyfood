@@ -50,8 +50,12 @@
     @include font-family-roboto;
     display:flex;
     flex-direction: column;
-    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
     gap: 30px;
+    
 }
 
 .fonctionnement-group {
@@ -61,7 +65,7 @@
 }
 
 .fonctionnement__titre {
-    font-size: 24px;
+   margin: 0;
     font-weight: 700;
     
 }
@@ -109,12 +113,17 @@
     gap: 18px;
     @include font-family-roboto;
     background-color:#F6F6F6 ;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+   
+    
 }
 
 .restaurants__titre {
-    font-size: 24px;
+    margin: 0;
     font-weight: 700;
 }
 
@@ -178,5 +187,5 @@
     border-radius: 3px;
 }
 
-/******* Bloc FOOTER *******/
+
 
