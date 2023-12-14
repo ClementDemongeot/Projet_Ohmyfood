@@ -20,20 +20,3 @@
 
 
 
-@mixin header {
-    /******* Bloc HEADER *******/
-
-.header {
-    display:flex;
-    height: 63px;
-    justify-content: center;
-    align-items: center;  
-}
-/******* Éléments HEADER *******/
-
-.header__logo {
-   width: 197px;
-   height: 36px;
-   background-color: white;
-}
-}

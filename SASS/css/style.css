@@ -10,6 +10,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.header a {
+  text-decoration: none;
+}
 
 /******* Éléments HEADER *******/
 .header__logo {
@@ -21,15 +24,15 @@ body {
 /******* Bloc FOOTER *******/
 .footer {
   font-family: "Roboto", sans-serif;
-  margin: 0;
   background-color: #353535;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 25px;
+  padding: 22px;
   font-size: 16px;
 }
 
+/******* Elements FOOTER *******/
 .footer__img {
   display: flex;
   width: 139px;
@@ -75,15 +78,15 @@ body {
 }
 .reservation-titre p {
   color: #353535;
-  font-size: 18px;
   font-weight: 300;
 }
 
-.reservation-titre__button {
+.button {
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -91,6 +94,7 @@ body {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: white;
   text-decoration: none;
+  font-size: 16px;
 }
 
 /******* Bloc FONCTIONNEMENT *******/
@@ -226,6 +230,89 @@ body {
   width: 80px;
   height: 29px;
   border-radius: 3px;
+}
+
+/******* Bloc header Menu *******/
+.menu__image {
+  display: flex;
+  margin: 0;
+  height: 275px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  gap: 40px;
+  padding-bottom: 40px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.menu__titre__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.menu__titre {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.menu__heart {
+  font-size: 20px;
+  height: 21px;
+}
+
+.menu__section {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu__section__titre {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu__card {
+  width: 349px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+}
+
+.menu__plate p {
+  margin: 0;
+}
+
+.menu__price p {
+  margin-bottom: 0%;
+  font-weight: 700;
+}
+
+.card__title {
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card__subtitle {
+  text-overflow: ellipsis;
+  font-size: 15.043px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
