@@ -59,12 +59,19 @@ body {
   text-decoration: none;
 }
 
+/******* Bloc FONCTIONNEMENT *******/
 .fonctionnement {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 30px;
+}
+
+.fonctionnement-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fonctionnement__titre {
@@ -89,12 +96,6 @@ body {
   font-weight: 500;
 }
 
-.fonctionnement-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .elipse {
   margin: 0;
   left: 0;
@@ -111,5 +112,83 @@ body {
   color: white;
   text-align: center;
 }
+
+/******* Bloc RESTAURANTS *******/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.restaurants__titre {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.restaurants__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.restaurants__img {
+  width: 346px;
+  height: 231px;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.restaurants__card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.card__title {
+  margin-bottom: 5px;
+  margin-top: 0;
+  color: black;
+  font-weight: 700;
+}
+
+.card__subtitle {
+  margin: 0;
+  color: #353535;
+  font-weight: 300;
+}
+
+.restaurants__heart {
+  font-size: 20px;
+  height: 40px;
+}
+
+.nouveau-title {
+  position: absolute;
+  right: 0;
+  transform: translate(-25%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+  color: #008766;
+  background-color: #99E2D0;
+  font-size: 13px;
+  width: 80px;
+  height: 29px;
+  border-radius: 3px;
+}
+
+/******* Bloc FOOTER *******/
 
 /*# sourceMappingURL=style.css.map */
