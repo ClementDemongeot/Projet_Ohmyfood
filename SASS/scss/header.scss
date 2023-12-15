@@ -1,15 +1,20 @@
 /******* Bloc HEADER *******/
 
 .header {
+   position:relative ;
     display:flex;
     height: 63px;
     justify-content: center;
     align-items: center;
      a {
-        text-decoration: none;
+         position: absolute;
+         top: 50%;
+         left: 25px;
+         transform: translateY(-50%);
+         font-size: 30px;
+         text-decoration: none;
      }
      
-
 }
 /******* Éléments HEADER *******/
 

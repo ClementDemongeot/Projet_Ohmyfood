@@ -48,15 +48,26 @@
 
 /******* Bloc FONCTIONNEMENT *******/
 
+.fonctionnement__container {
+    display: flex;
+    flex-direction: column;
+    
+    width: 346px;
+    gap: 30px;
+    
+}
+
 .fonctionnement {
+    width: 100%;
     @include font-family-roboto;
     display:flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    gap: 30px;
+   
+   
+  
     
 }
 
@@ -67,8 +78,10 @@
 }
 
 .fonctionnement__titre {
-   margin: 0;
-    font-weight: 700;
+    margin: 0;
+    font-size: 24px;
+    width: 275px;
+    height: 31px;
     
 }
 
@@ -109,24 +122,30 @@
 
 /******* Bloc RESTAURANTS *******/
 
-.restaurants {
+.restaurants__container {
     display: flex;
     flex-direction: column;
+    width: 346px;
+    gap: 18px;
+}
+
+.restaurants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 18px;
     @include font-family-roboto;
     background-color:#F6F6F6 ;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    
    
-    
 }
 
 .restaurants__titre {
     margin: 0;
     font-weight: 700;
+    
 }
 
 .restaurants__card {
@@ -174,8 +193,8 @@
 
 .nouveau-title {
     position: absolute;
-    right:0;
-    transform: translate(-25%,50%);
+    right:15px;
+    top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
