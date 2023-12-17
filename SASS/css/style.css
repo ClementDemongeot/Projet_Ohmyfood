@@ -260,12 +260,23 @@ body {
   background-size: contain;
 }
 
+.menu-wrapper-delice {
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  padding-top: 240px;
+  background-size: contain;
+}
+
 .menu-wrapper-enchantée {
   background-image: url("../../Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   padding-top: 271px;
   background-size: contain;
   background-position-y: -136px;
-  background-repeat: no-repeat;
+}
+
+.menu-wrapper-française {
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  padding-top: 240px;
+  background-size: contain;
 }
 
 .menu {
@@ -282,7 +293,7 @@ body {
 .menu__titre__content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -311,7 +322,7 @@ body {
 }
 
 .menu__card {
-  width: 349px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
