@@ -1,17 +1,24 @@
-/******* Bloc header Menu *******/
+/******* Variables *******/
 
-.menu-wrapper {
+$font-Shrikhand :'Shrikhand', serif;
+$roboto-font:'Roboto', sans-serif;
+
+
+/******* Bloc MENU IMAGE BACKGROUND *******/
+
+.menu-wrapper-palette-du-gout {
     background-image: url("../../Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     padding-top: 240px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
-
-.menu-wrapper-delice {
+.menu-wrapper-delice-des-sens {
     background-image: url("../../Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     padding-top: 240px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
-.menu-wrapper-enchantée {
+.menu-wrapper-note-enchantée {
     background-image: url("../../Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     padding-top: 271px;
     background-size:contain;
@@ -19,13 +26,14 @@
     background-position: top;
     background-repeat: no-repeat;
 }
-
-.menu-wrapper-française {
+.menu-wrapper-a-la-française {
     background-image: url("../../Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     padding-top: 240px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
+/******* Bloc MENU *******/
 
 .menu {
     display: flex;
@@ -37,76 +45,76 @@
     gap: 40px;
     padding-bottom: 40px;
 
-    .button {
-        align-self: center;
+
+    &__titre-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-}
+   &__titre {
+        font-family: $font-Shrikhand; 
+        font-size: 28px;
+        font-weight: 400;
+    }
+    &__heart-titre {
+        font-size: 20px;
+        height: 21px;
+    }
 
-
-.menu__titre__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu__titre {
-    @include font-family-shrikhand; 
-    font-size: 28px;
-    font-weight: 400;
-}
-
-.menu__heart {
-    font-size: 20px;
-    height: 21px;
+    .button {
+        @include button;
+    }
     
 }
 
 .menu__section {
-    @include font-family-roboto;
+    font-family: $roboto-font;
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
 
-.menu__section__titre {
-    margin: 0px;
-    font-size: 16px;
-    text-transform:uppercase;
-}
+    .menu__section__titre {
+        margin: 0px;
+        font-size: 16px;
+        text-transform:uppercase;
+    }
 
-.menu__card {
+    .menu__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        background-color:white;
+        padding: 15px;
+        box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .menu__plate {
+        p {
+            margin: 0; 
+        }
+    }
     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 15px;
-    background-color:white;
-    padding: 15px;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
-}
-
-.menu__plate {
-    p {
-        margin: 0; 
+    .menu__price {
+        p {
+            margin-bottom: 0%;
+            font-weight: 700;
+        }
     }
-}
-
-.menu__price {
-    p {
-        margin-bottom: 0%;
-        font-weight: 700;
+    
+    .card__title {
+        text-overflow: ellipsis;
+        font-size: 18px;
+        font-weight: 500; 
     }
+    
+    .card__subtitle {
+        text-overflow: ellipsis;
+        font-size: 15.043px;
+        font-weight: 300;
+    }
+    
 }
 
-.card__title {
-    text-overflow: ellipsis;
-    font-size: 18px;
-    font-weight: 500; 
-}
 
-.card__subtitle {
-    text-overflow: ellipsis;
-    font-size: 15.043px;
-    font-weight: 300;
-}
 
