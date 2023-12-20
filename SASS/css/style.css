@@ -314,6 +314,7 @@ body {
   padding-top: 240px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .menu-wrapper-delice-des-sens {
@@ -321,6 +322,7 @@ body {
   padding-top: 240px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .menu-wrapper-note-enchantée {
@@ -337,6 +339,7 @@ body {
   padding-top: 240px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /******* Bloc MENU *******/
