@@ -24,7 +24,7 @@ $purple-first-color:  #9356DC;
     align-items: center;
     text-align: center;
     background-color:#F6F6F6;
-    padding: 40px;
+    padding: 30px;
      p { 
         color: #353535;
         font-weight: 300;
@@ -49,7 +49,6 @@ $purple-first-color:  #9356DC;
         &__container {
             display: flex;
             flex-direction: column;
-            width: 346px;
             gap: 30px;
     }
 
@@ -59,14 +58,21 @@ $purple-first-color:  #9356DC;
             width: 275px;
             height: 31px; 
     }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
    
-        &__group {
+        &__button {
                 display: flex;
                 flex-direction: column;
                 align-items: center;  
     }
     
-        &__button {
+        &__button-content {
             position: relative;
             display: flex;
             align-items: center;
@@ -118,13 +124,25 @@ $purple-first-color:  #9356DC;
     &__container {
         display: flex;
         flex-direction: column;
-        width: 346px;
+       
         gap: 18px;
     }
 
     &__titre {
         margin: 0;
         font-weight: 700;
+    }
+
+    &__frame {
+        display: flex;
+        flex-direction: column;
+        gap: 18px; 
+    }
+
+     .frame-content {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
     }
 
     .card {
@@ -189,3 +207,52 @@ $purple-first-color:  #9356DC;
     }
     
 }
+
+/******* Media queries *******/
+@media (min-width: 1024px) {
+
+    .reservation {
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+  
+    .fonctionnement {
+        width: 100%;
+
+        &__container {
+            gap: 25px;
+        }
+
+        &__group {
+            flex-direction: row;
+        }
+    
+    }
+
+    .restaurants {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        
+        &__frame {
+            display: flex;
+            gap: 50px;
+            
+        }
+        .frame-content {
+            flex-direction: row;
+            gap: 100px; 
+        }
+        .card {
+            width: 490px;
+                &__img{
+                    width: 490px;
+                }
+        }
+    }
+  }

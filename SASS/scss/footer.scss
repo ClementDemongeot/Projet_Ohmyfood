@@ -30,4 +30,30 @@
         gap: 7px;
     }
 }
-/******* Elements FOOTER *******/
+
+/******* Media queries *******/
+@media (min-width: 1024px) {
+
+    .footer {
+        flex-direction: row-reverse;
+        padding: 30px 25px;
+        align-items: flex-end;
+        gap: 16px;
+        padding: 30px 25px;
+        height: 114px;
+        
+
+        .footer__content {
+            flex-direction: row;
+            a {
+                width: 168px; 
+            }   
+        }
+    }
+    
+    .footer__img {
+        margin-right: 25px;
+        justify-content: center;
+        align-items: center;  
+    }
+}
