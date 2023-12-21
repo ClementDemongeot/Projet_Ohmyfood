@@ -26,6 +26,11 @@ body {
 }
 
 /******* Éléments HEADER *******/
+@media (min-width: 1024px) {
+  .header {
+    height: 96px;
+  }
+}
 /******* Bloc FOOTER *******/
 .footer {
   font-family: "Roboto", sans-serif;
@@ -310,41 +315,76 @@ body {
 /******* Variables *******/
 /******* Bloc MENU IMAGE BACKGROUND *******/
 .menu-wrapper-palette-du-gout {
-  background-image: url("../../Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  padding-top: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
+  position: relative;
 }
 
 .menu-wrapper-delice-des-sens {
-  background-image: url("../../Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  padding-top: 240px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
+  position: relative;
 }
 
 .menu-wrapper-note-enchantée {
-  background-image: url("../../Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  padding-top: 330px;
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 .menu-wrapper-a-la-française {
-  background-image: url("../../Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  padding-top: 250px;
+  position: relative;
+}
+
+/******* Bloc MENU *******/
+.menu-wrapper-palette-du-gout > .menu-image-palette-du-gout {
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.menu-image-palette-du-gout {
+  width: 100%;
+  aspect-ratio: 1/1;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
 }
 
-/******* Bloc MENU *******/
+.menu-wrapper-note-enchantée > .menu-image-la-note-enchantée {
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.menu-image-la-note-enchantée {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -140px;
+}
+
+.menu-wrapper-delice-des-sens > .menu-image-le-delice-des-sens {
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.menu-image-le-delice-des-sens {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.menu-wrapper-a-la-française > .menu-image-a-la-française {
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.menu-image-a-la-française {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -30px;
+}
+
+.menu-container {
+  margin-top: -243px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -422,6 +462,44 @@ body {
   text-overflow: ellipsis;
   font-size: 15.043px;
   font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+  }
+  .menu-container .menu {
+    width: 1055px;
+    align-items: center;
+  }
+  .menu__section {
+    width: 604px;
+  }
+  .menu__titre-content {
+    gap: 40px;
+  }
+  .menu-image-palette-du-gout {
+    aspect-ratio: 20/5;
+    background-size: cover;
+    background-position-y: -400px;
+  }
+  .menu-image-la-note-enchantée {
+    aspect-ratio: 20/5;
+    background-size: cover;
+    background-position-y: -400px;
+  }
+  .menu-image-le-delice-des-sens {
+    aspect-ratio: 20/5;
+    background-size: cover;
+    background-position-y: -600px;
+  }
+  .menu-image-a-la-française {
+    aspect-ratio: 20/5;
+    background-size: cover;
+    background-position-y: -400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
