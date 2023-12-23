@@ -3,6 +3,67 @@
 $roboto-font:'Roboto', sans-serif;
 $purple-first-color:  #9356DC;
 
+/******* Loader *******/
+
+.loader {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    opacity: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animLoader 0.1s 2s forwards;
+    .bar {
+        display: inline-block;
+        width: 3px;
+        
+        height: 50px;
+        background-color: black;
+        border-radius: 10px;
+        animation: scale-up4 1s linear infinite;
+      }
+      .bar:nth-child(2) {
+        height: 35px;
+        margin: 0 5px;
+        animation-delay: .25s;
+      }
+      
+      .bar:nth-child(3) {
+        animation-delay: .5s;
+      }
+      
+      @keyframes scale-up4 {
+        20% {
+          background-color:black;
+          transform: scaleY(1.5);
+        }
+      
+        40% {
+          transform: scaleY(1);
+        }
+      }
+}
+
+header,main,footer {
+    opacity: 0.1;
+    animation: bodyLoader 0.1s 2s forwards;
+    
+}
+
+@keyframes bodyLoader {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animLoader {
+    to {
+        opacity: 0;
+    }
+}
+
+
 /******* Bloc localisation *******/
 
 .localisation {
@@ -177,6 +238,7 @@ $purple-first-color:  #9356DC;
                 width: 80px;
                 height: 29px;
                 border-radius: 3px;
+
             }
 
             &__content {
@@ -184,6 +246,8 @@ $purple-first-color:  #9356DC;
                 justify-content: space-between;
                 align-items: center;
                 padding: 10px;
+                height: 60px;
+
             }
 
             &__title {
@@ -200,10 +264,37 @@ $purple-first-color:  #9356DC;
             }
         
             &__heart {
+                position: relative;
                 font-size: 20px;
-                height: 40px;
+                top:-6px;
+                left: -5px;
                 padding: 10px;
+                
+                .fa-solid {
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                }
+
+                &:hover { 
+                    .fa-solid {
+                        opacity: 1;
+                        z-index: 1;
+                        background:-webkit-linear-gradient(90deg, #ff79da -11.44%, #9356DC 105.93%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+
+                i {
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                }
             }
+           &__text {
+                padding-left: 10px;
+           }
+
     }
     
 }
@@ -255,4 +346,8 @@ $purple-first-color:  #9356DC;
                 }
         }
     }
-  }
+
+    
+
+}
+
