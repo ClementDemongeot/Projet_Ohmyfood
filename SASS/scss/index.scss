@@ -18,7 +18,7 @@ $purple-first-color:  #9356DC;
         display: inline-block;
         width: 3px;
         height: 50px;
-        background-color: black;
+        background-color:  #FF79DA;
         border-radius: 10px;
         animation: scale-up4 1s linear infinite;
       }
@@ -34,7 +34,7 @@ $purple-first-color:  #9356DC;
       
       @keyframes scale-up4 {
         20% {
-          background-color:black;
+          background-color: #9356DC;
           transform: scaleY(1.5);
         }
       
@@ -44,10 +44,12 @@ $purple-first-color:  #9356DC;
       }
 }
 
-header,main,footer {
+.fade-in {
+    header,main,footer {
     opacity: 0.1;
     animation: bodyLoader 0.1s 2s forwards;
     
+}
 }
 
 @keyframes bodyLoader {
@@ -253,7 +255,7 @@ header,main,footer {
                 margin-bottom: 5px;
                 margin-top: 0;
                 color: black;
-                font-weight: 700;
+                font-weight: 800;
             }
     
             &__subtitle {
@@ -279,7 +281,7 @@ header,main,footer {
                         opacity: 1;
                         z-index: 1;
                         background:-webkit-linear-gradient(90deg, #ff79da -11.44%, #9356DC 105.93%);
-                        -webkit-background-clip: text;
+                        background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
                 }
