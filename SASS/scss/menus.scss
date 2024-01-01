@@ -128,6 +128,8 @@ $desktop: 1024px;
     }
 
     .menu__card {
+        position: relative;
+        overflow: hidden;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -135,9 +137,28 @@ $desktop: 1024px;
         background-color:white;
         padding: 15px;
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+        cursor: pointer;
+        &:hover >.checkbox {
+            right: 0;
+            
+        }
     }
 
+    .checkbox {
+        position: absolute;
+        font-size: 25px;
+        right: -70px;
+        background-color: #00ccbc;
+        padding: 20px;
+        color: white;
+        transition: all 0.7s ease;
+          
+    }
+
+    
+
     .menu__plate {
+        width: 100%;
         p {
             margin: 0; 
         }
@@ -153,13 +174,16 @@ $desktop: 1024px;
     .card__title {
         text-overflow: ellipsis;
         font-size: 18px;
-        font-weight: 500; 
+        font-weight: 900; 
     }
     
     .card__subtitle {
         text-overflow: ellipsis;
         font-size: 15.043px;
         font-weight: 300;
+        max-width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
     }
     
     hr { 
