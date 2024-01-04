@@ -93,13 +93,13 @@ body {
   opacity: 1;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: animLoader 0.1s 2s forwards;
+  animation: animLoader 0.1s 1s forwards;
 }
 .loader .bar {
   display: inline-block;
   width: 3px;
   height: 50px;
-  background-color: #FF79DA;
+  background-color: #ff79da;
   border-radius: 10px;
   animation: scale-up4 1s linear infinite;
 }
@@ -113,7 +113,7 @@ body {
 }
 @keyframes scale-up4 {
   20% {
-    background-color: #9356DC;
+    background-color: #9356dc;
     transform: scaleY(1.5);
   }
   40% {
@@ -121,9 +121,11 @@ body {
   }
 }
 
-.fade-in header, .fade-in main, .fade-in footer {
+.fade-in header,
+.fade-in main,
+.fade-in footer {
   opacity: 0.1;
-  animation: bodyLoader 0.1s 2s forwards;
+  animation: bodyLoader 0.1s 1s forwards;
 }
 
 @keyframes bodyLoader {
@@ -143,7 +145,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   gap: 17px;
 }
 
@@ -154,7 +156,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 30px;
 }
 .reservation p {
@@ -221,7 +223,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 18px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 322.486px;
   height: 72.379px;
   border-radius: 20px;
@@ -243,7 +245,7 @@ body {
   width: 24px;
   height: 24px;
   border-radius: 24px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   text-align: center;
 }
@@ -256,7 +258,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 18px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -305,7 +307,7 @@ body {
   margin: 0;
   text-decoration: none;
   color: #008766;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   font-size: 13px;
   width: 80px;
   height: 29px;
@@ -343,7 +345,7 @@ body {
 .restaurants .card__heart:hover .fa-solid {
   opacity: 1;
   z-index: 1;
-  background: -webkit-linear-gradient(90deg, #ff79da -11.44%, #9356DC 105.93%);
+  background: -webkit-linear-gradient(90deg, #ff79da -11.44%, #9356dc 105.93%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
