@@ -1,250 +1,269 @@
 /******* Variables *******/
 
-$font-Shrikhand :'Shrikhand', serif;
-$roboto-font:'Roboto', sans-serif;
+$font-Shrikhand: "Shrikhand", serif;
+$roboto-font: "Roboto", sans-serif;
 $desktop: 1024px;
-
 
 /******* Bloc MENU IMAGE BACKGROUND *******/
 
 .menu-wrapper-palette-du-gout {
-    position: relative;
+  position: relative;
 }
 .menu-wrapper-delice-des-sens {
-    position: relative;
+  position: relative;
 }
 .menu-wrapper-note-enchantée {
-   position: relative;
+  position: relative;
 }
 .menu-wrapper-a-la-française {
-   position: relative;
+  position: relative;
 }
 
 /******* Bloc MENU *******/
 
-
 .menu-wrapper-palette-du-gout > .menu-image-palette-du-gout {
-    background-image: url("../../Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 .menu-image-palette-du-gout {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
 }
-
 
 .menu-wrapper-note-enchantée > .menu-image-la-note-enchantée {
-    background-image: url("../../Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 .menu-image-la-note-enchantée {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position-y: -140px;
-   
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -140px;
 }
-
 
 .menu-wrapper-delice-des-sens > .menu-image-le-delice-des-sens {
-    background-image: url("../../Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 .menu-image-le-delice-des-sens {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    
-
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .menu-wrapper-a-la-française > .menu-image-a-la-française {
-    background-image: url("../../Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../../Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 .menu-image-a-la-française {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position-y: -30px;
-   
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -30px;
 }
 
-
 .menu-container {
-    margin-top: -243px;
+  margin-top: -243px;
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #f6f6f6;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  gap: 40px;
+  padding-bottom: 40px;
+
+  &__titre-content {
     display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background-color: #f6f6f6;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    gap: 40px;
-    padding-bottom: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__titre {
+    font-family: $font-Shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  &__heart-titre {
+    font-size: 20px;
+    height: 21px;
+  }
 
-
-    &__titre-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-   &__titre {
-        font-family: $font-Shrikhand; 
-        font-size: 28px;
-        font-weight: 400;
-    }
-    &__heart-titre {
-        font-size: 20px;
-        height: 21px;
-    }
-
-
-
-    .button {
-        @include button;
-    }
-    
+  .button {
+    @include button;
+  }
 }
 
 .menu__section {
-    font-family: $roboto-font;
+  font-family: $roboto-font;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .menu__section__titre {
+    margin: 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .menu__card {
+    position: relative;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    &:hover > .checkbox {
+      right: 0;
+    }
+  }
 
-    .menu__section__titre {
-        margin: 0px;
-        font-size: 16px;
-        text-transform:uppercase;
-    }
+  .checkbox {
+    position: absolute;
+    font-size: 25px;
+    right: -70px;
+    background-color: #00ccbc;
+    padding: 20px;
+    color: white;
+    transition: all 0.7s ease;
+  }
 
-    .menu__card {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 15px;
-        background-color:white;
-        padding: 15px;
-        box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
-        cursor: pointer;
-        &:hover >.checkbox {
-            right: 0;
-            
-        }
+  .menu__plate {
+    width: 100%;
+    p {
+      margin: 0;
     }
+  }
 
-    .checkbox {
-        position: absolute;
-        font-size: 25px;
-        right: -70px;
-        background-color: #00ccbc;
-        padding: 20px;
-        color: white;
-        transition: all 0.7s ease;
-          
+  .menu__price {
+    p {
+      margin-bottom: 0%;
+      font-weight: 700;
     }
+  }
 
-    
+  .card__title {
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 900;
+  }
 
-    .menu__plate {
-        width: 100%;
-        p {
-            margin: 0; 
-        }
-    }
-    
-    .menu__price {
-        p {
-            margin-bottom: 0%;
-            font-weight: 700;
-        }
-    }
-    
-    .card__title {
-        text-overflow: ellipsis;
-        font-size: 18px;
-        font-weight: 900; 
-    }
-    
-    .card__subtitle {
-        text-overflow: ellipsis;
-        font-size: 15.043px;
-        font-weight: 300;
-        max-width: 80%;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    
-    hr { 
-        
-        width: 40px;
-        height: 3px;
-        background-color: #99E2D0;
-        margin: 0;
-        border: 0;
-    }
+  .card__subtitle {
+    text-overflow: ellipsis;
+    font-size: 15.043px;
+    font-weight: 300;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  hr {
+    width: 40px;
+    height: 3px;
+    background-color: #99e2d0;
+    margin: 0;
+    border: 0;
+  }
 }
 
+.menu_entrees {
+  position: relative;
+  animation: animMenu 0.8s ease forwards;
+  @keyframes animMenu {
+    from {
+      left: -100px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
+
+.menu_plats {
+  opacity: 0;
+  position: relative;
+  animation: animMenu 0.8s 0.5s ease forwards;
+  @keyframes animMenu {
+    from {
+      left: -100px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
+
+.menu_desserts {
+  opacity: 0;
+  position: relative;
+  animation: animMenu 0.8s 1s ease forwards;
+  @keyframes animMenu {
+    from {
+      left: -100px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
 
 @media (min-width: $desktop) {
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
 
-    .menu-container {
-        display: flex;
-        justify-content: center;
-        margin-top: -80px;
-    
-        .menu {
-           width: 1055px;
-            align-items: center;
-        }
-        
+    .menu {
+      width: 1055px;
+      align-items: center;
     }
-    .menu__section {
-        width: 604px;
-    }
-    
-    .menu__titre-content {
-            gap: 40px;
-    }
+  }
+  .menu__section {
+    width: 604px;
+  }
 
-    .menu-image-palette-du-gout {
-        aspect-ratio: 20/ 5;
-        background-size: cover;
-        background-position-y:-400px;
-        
-    }
+  .menu__titre-content {
+    gap: 40px;
+  }
 
-    .menu-image-la-note-enchantée {
-        aspect-ratio: 20/ 5;
-        background-size: cover;
-        background-position-y:-400px;
-    }
+  .menu-image-palette-du-gout {
+    aspect-ratio: 20/ 5;
+    background-size: cover;
+    background-position-y: -400px;
+  }
 
-    .menu-image-le-delice-des-sens {
-        aspect-ratio: 20/ 5;
-        background-size: cover;
-        background-position-y: -600px;
+  .menu-image-la-note-enchantée {
+    aspect-ratio: 20/ 5;
+    background-size: cover;
+    background-position-y: -400px;
+  }
+
+  .menu-image-le-delice-des-sens {
+    aspect-ratio: 20/ 5;
+    background-size: cover;
+    background-position-y: -600px;
+  }
+
+  .menu-image-a-la-française {
+    aspect-ratio: 20/ 5;
+    background-size: cover;
+    background-position-y: -400px;
+  }
 }
-
-    .menu-image-a-la-française {
-        
-        aspect-ratio: 20/ 5;
-        background-size: cover;
-        background-position-y:-400px;
-       
-   
-}
-}
-
-

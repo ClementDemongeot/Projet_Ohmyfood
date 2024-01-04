@@ -573,9 +573,56 @@ body {
 .menu__section hr {
   width: 40px;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin: 0;
   border: 0;
+}
+
+.menu_entrees {
+  position: relative;
+  animation: animMenu 0.8s ease forwards;
+}
+@keyframes animMenu {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.menu_plats {
+  opacity: 0;
+  position: relative;
+  animation: animMenu 0.8s 0.5s ease forwards;
+}
+@keyframes animMenu {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.menu_desserts {
+  opacity: 0;
+  position: relative;
+  animation: animMenu 0.8s 1s ease forwards;
+}
+@keyframes animMenu {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1024px) {
