@@ -544,7 +544,7 @@ body {
   position: absolute;
   font-size: 25px;
   right: -70px;
-  background-color: #00ccbc;
+  background-color: #99e2d0;
   padding: 20px;
   color: white;
   transition: all 0.7s ease;
@@ -563,6 +563,9 @@ body {
   text-overflow: ellipsis;
   font-size: 18px;
   font-weight: 900;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__section .card__subtitle {
   text-overflow: ellipsis;

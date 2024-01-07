@@ -133,7 +133,7 @@ $desktop: 1024px;
     position: absolute;
     font-size: 25px;
     right: -70px;
-    background-color: #00ccbc;
+    background-color: #99e2d0;
     padding: 20px;
     color: white;
     transition: all 0.7s ease;
@@ -157,6 +157,9 @@ $desktop: 1024px;
     text-overflow: ellipsis;
     font-size: 18px;
     font-weight: 900;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .card__subtitle {
