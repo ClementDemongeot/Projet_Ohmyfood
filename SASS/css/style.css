@@ -31,6 +31,7 @@ body {
     height: 96px;
   }
 }
+/******* Variables *******/
 /******* Bloc FOOTER *******/
 .footer {
   font-family: "Roboto", sans-serif;
@@ -101,7 +102,7 @@ body {
   height: 50px;
   background-color: #ff79da;
   border-radius: 10px;
-  animation: scale-up4 1s linear infinite;
+  animation: scale-up 1s linear infinite;
 }
 .loader .bar:nth-child(2) {
   height: 35px;
@@ -111,7 +112,7 @@ body {
 .loader .bar:nth-child(3) {
   animation-delay: 0.5s;
 }
-@keyframes scale-up4 {
+@keyframes scale-up {
   20% {
     background-color: #9356dc;
     transform: scaleY(1.5);
@@ -173,7 +174,7 @@ body {
   width: 218px;
   height: 50px;
   border-radius: 25px;
-  background: var(--Button-Gradient, linear-gradient(180deg, #ff79da -11.44%, #9356DC 105.93%));
+  background: var(--Button-Gradient, linear-gradient(180deg, #ff79da -11.44%, #9356dc 105.93%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: white;
   text-decoration: none;
@@ -345,7 +346,7 @@ body {
 .restaurants .card__heart:hover .fa-solid {
   opacity: 1;
   z-index: 1;
-  background: -webkit-linear-gradient(90deg, #ff79da -11.44%, #9356dc 105.93%);
+  background: linear-gradient(90deg, #ff79da -11.44%, #9356dc 105.93%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -501,7 +502,7 @@ body {
   width: 218px;
   height: 50px;
   border-radius: 25px;
-  background: var(--Button-Gradient, linear-gradient(180deg, #ff79da -11.44%, #9356DC 105.93%));
+  background: var(--Button-Gradient, linear-gradient(180deg, #ff79da -11.44%, #9356dc 105.93%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: white;
   text-decoration: none;

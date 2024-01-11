@@ -2,6 +2,9 @@
 
 $roboto-font: "Roboto", sans-serif;
 $purple-first-color: #9356dc;
+$pink-second-color: #ff79da;
+$green-third-color: #99e2d0;
+$desktop: 1024px;
 
 /******* Loader *******/
 
@@ -18,9 +21,9 @@ $purple-first-color: #9356dc;
     display: inline-block;
     width: 3px;
     height: 50px;
-    background-color: #ff79da;
+    background-color: $pink-second-color;
     border-radius: 10px;
-    animation: scale-up4 1s linear infinite;
+    animation: scale-up 1s linear infinite;
   }
   .bar:nth-child(2) {
     height: 35px;
@@ -32,9 +35,9 @@ $purple-first-color: #9356dc;
     animation-delay: 0.5s;
   }
 
-  @keyframes scale-up4 {
+  @keyframes scale-up {
     20% {
-      background-color: #9356dc;
+      background-color: $purple-first-color;
       transform: scaleY(1.5);
     }
 
@@ -232,7 +235,7 @@ $purple-first-color: #9356dc;
       margin: 0;
       text-decoration: none;
       color: #008766;
-      background-color: #99e2d0;
+      background-color: $green-third-color;
       font-size: 13px;
       width: 80px;
       height: 29px;
@@ -276,10 +279,10 @@ $purple-first-color: #9356dc;
         .fa-solid {
           opacity: 1;
           z-index: 1;
-          background: -webkit-linear-gradient(
+          background: linear-gradient(
             90deg,
-            #ff79da -11.44%,
-            #9356dc 105.93%
+            $pink-second-color -11.44%,
+            $purple-first-color 105.93%
           );
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -299,7 +302,7 @@ $purple-first-color: #9356dc;
 }
 
 /******* Media queries *******/
-@media (min-width: 1024px) {
+@media (min-width: $desktop) {
   .reservation {
     h1 {
       font-size: 40px;
