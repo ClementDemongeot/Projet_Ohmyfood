@@ -488,9 +488,28 @@ body {
   font-size: 28px;
   font-weight: 400;
 }
-.menu__heart-titre {
+.menu__heart {
+  position: relative;
   font-size: 20px;
-  height: 21px;
+  cursor: pointer;
+  left: -5px;
+  padding: 10px;
+}
+.menu__heart .fa-solid {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.menu__heart:hover .fa-solid {
+  opacity: 1;
+  z-index: 1;
+  background: linear-gradient(90deg, #ff79da -11.44%, #9356dc 105.93%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__heart i {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .menu .button {
   font-family: "Roboto", sans-serif;
@@ -538,10 +557,36 @@ body {
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.menu__section .menu__card:hover > .checkbox {
-  right: 0;
+.menu__section .menu__card .card__title {
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 900;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu__section .checkbox {
+.menu__section .menu__card .card__subtitle {
+  text-overflow: ellipsis;
+  font-size: 15.043px;
+  font-weight: 300;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__section .menu__card .menu__plate {
+  width: 100%;
+}
+.menu__section .menu__card .menu__plate p {
+  margin: 0;
+}
+.menu__section .menu__card .menu__price p {
+  position: relative;
+  right: 0;
+  margin-bottom: 0%;
+  font-weight: 700;
+  transition: all 0.7s ease;
+}
+.menu__section .menu__card .checkbox {
   position: absolute;
   font-size: 25px;
   right: -70px;
@@ -550,31 +595,11 @@ body {
   color: white;
   transition: all 0.7s ease;
 }
-.menu__section .menu__plate {
-  width: 100%;
+.menu__section .menu__card:hover .checkbox {
+  right: 0;
 }
-.menu__section .menu__plate p {
-  margin: 0;
-}
-.menu__section .menu__price p {
-  margin-bottom: 0%;
-  font-weight: 700;
-}
-.menu__section .card__title {
-  text-overflow: ellipsis;
-  font-size: 18px;
-  font-weight: 900;
-  max-width: 80%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.menu__section .card__subtitle {
-  text-overflow: ellipsis;
-  font-size: 15.043px;
-  font-weight: 300;
-  max-width: 80%;
-  white-space: nowrap;
-  overflow: hidden;
+.menu__section .menu__card:hover .menu__price p {
+  right: 60px;
 }
 .menu__section hr {
   width: 40px;

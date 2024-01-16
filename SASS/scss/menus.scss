@@ -94,9 +94,37 @@ $green-third-color: #99e2d0;
     font-size: 28px;
     font-weight: 400;
   }
-  &__heart-titre {
+  &__heart {
+    position: relative;
     font-size: 20px;
-    height: 21px;
+    cursor: pointer;
+    left: -5px;
+    padding: 10px;
+
+    .fa-solid {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    &:hover {
+      .fa-solid {
+        opacity: 1;
+        z-index: 1;
+        background: linear-gradient(
+          90deg,
+          $pink-second-color -11.44%,
+          $purple-first-color 105.93%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   .button {
@@ -127,51 +155,62 @@ $green-third-color: #99e2d0;
     padding: 15px;
     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    &:hover > .checkbox {
-      right: 0;
+
+    .card__title {
+      text-overflow: ellipsis;
+      font-size: 18px;
+      font-weight: 900;
+      max-width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
     }
-  }
 
-  .checkbox {
-    position: absolute;
-    font-size: 25px;
-    right: -70px;
-    background-color: $green-third-color;
-    padding: 20px;
-    color: white;
-    transition: all 0.7s ease;
-  }
-
-  .menu__plate {
-    width: 100%;
-    p {
-      margin: 0;
+    .card__subtitle {
+      text-overflow: ellipsis;
+      font-size: 15.043px;
+      font-weight: 300;
+      max-width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
     }
-  }
 
-  .menu__price {
-    p {
-      margin-bottom: 0%;
-      font-weight: 700;
+    .menu__plate {
+      width: 100%;
+      p {
+        margin: 0;
+      }
     }
-  }
 
-  .card__title {
-    text-overflow: ellipsis;
-    font-size: 18px;
-    font-weight: 900;
-    max-width: 80%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
+    .menu__price {
+      p {
+        position: relative;
+        right: 0;
+        margin-bottom: 0%;
+        font-weight: 700;
+        transition: all 0.7s ease;
+      }
+    }
 
-  .card__subtitle {
-    text-overflow: ellipsis;
-    font-size: 15.043px;
-    font-weight: 300;
-    max-width: 80%;
-    white-space: nowrap;
-    overflow: hidden;
+    .checkbox {
+      position: absolute;
+      font-size: 25px;
+      right: -70px;
+      background-color: $green-third-color;
+      padding: 20px;
+      color: white;
+      transition: all 0.7s ease;
+    }
+
+    &:hover {
+      .checkbox {
+        right: 0;
+      }
+      .menu__price {
+        p {
+          right: 60px;
+        }
+      }
+    }
   }
 
   hr {
